@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from main.views import query1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('query1/', query1)
 ]
