@@ -17,8 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from main.views import query1
+from dia3.views import counter, resetcounter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('query1/', query1)
+    path('query1/', query1),
+    path('counter/', counter),
+    path('counter/reset', resetcounter)
 ]
